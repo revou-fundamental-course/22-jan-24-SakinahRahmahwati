@@ -29,6 +29,7 @@ header{
 }
 
 .isi{
+    margin-top: 100px;
     display: flex;
     justify-content: center;
 }
@@ -38,23 +39,35 @@ header{
     height: 300px;
 }
 
-.isi1 p{
-    text-align: center;
+.profil {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 80px;
 }
 
 .isi2 {
     padding: 40px;
     background-color: rgb(233, 229, 229);
+    background-clip: padding-box;
+}
+
+.daftar li{
+    left: auto;
+}
+
+.ourPaket{
+    background-color: gainsboro;
+    padding: 100px;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .our-package{
-    margin-top: 100px;
+    margin-top: 40px;
     display: flex;
-    justify-content: space-around;
-}
-
-.our-package div {
-    text-align: center;
+    justify-content: center;
+    flex-flow: wrap row;
 }
 
 .circle{
@@ -75,4 +88,15 @@ header{
 .inquiry-form {
     display: flex;
     flex-direction: column;
+}
+
+.closing {
+    margin: 60px;
+    text-align: center;
+}
+
+footer{
+    padding: 20px;
+    background-color: rgb(233, 229, 229);
+    text-align: center;
 }
