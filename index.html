@@ -55,18 +55,22 @@
         <div class="isi2">
             <h2>Contact Us</h2>
             <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
-            <label for="nama">Your Name : </label><br>
-            <input id="nama" type="text" placeholder="First and Last Name"><br>
-            <label for="umur">Email Address : </label><br>
-            <input id="email" type="email" placeholder="example@email.com"><br>
-            <label for="kesukaan">What are you interested in? </label><br>
-            <select placeholder="Select Option">
-                <option>Gaming</option>
-                <option>Shopping</option>
-                <option>Reading</option>
-                <option>Writing</option>
-            </select><br>
-            <input type="submit" name="Submit">
+            <form name="pesan-form" onsubmit="return validateForm()">
+                <label>Your Name : </label><br>
+                <input name="nama" type="text" placeholder="First and Last Name"><br>
+                <label>Email Address : </label><br>
+                <input name="email" type="email" placeholder="example@email.com"><br>
+                <label>What are you interested in? </label><br>
+                <select name="like" placeholder="Select Option">
+                    <option>Gaming</option>
+                    <option>Shopping</option>
+                    <option>Reading</option>
+                    <option>Writing</option>
+                </select><br>
+                <button id="kirim" type="submit">Send</button>
+                <p id="error-name"></p>
+            </form>
+            
         </div>
     </div>
     <div class="ourPaket">
@@ -81,12 +85,14 @@
         <div class="circle" style="background-image: url(assets/img2.jpg); margin-bottom: 60px;"></div>
         <div style="margin-left: 60px; margin-right: 60px; text-align: left;">
             <b>Fresh fruit</b><br>
-            <p style="text-align: left;">Buah dengan kualitas terbaik <br> dari local atau import dan <br> harga yang menarik </p>
+            <p style="text-align: left;">Buah dengan kualitas terbaik <br> dari local atau import dan <br> harga yang
+                menarik </p>
         </div>
         <div class="circle" style="background-image: url(assets/img6.png); margin-bottom: 60px;"></div>
         <div style="margin-left: 60px; margin-right: 60px; text-align: left;">
             <b>Instan Delivery</b><br>
-            <p style="text-align: left;">Dikirim instan oleh kurir <br> yang telah di trainning <br> dengan SOP untuk menjaga <br> kondisi belanja kamu</p>
+            <p style="text-align: left;">Dikirim instan oleh kurir <br> yang telah di trainning <br> dengan SOP untuk
+                menjaga <br> kondisi belanja kamu</p>
         </div>
         <div class="circle" style="background-image: url(assets/img5.jpeg); margin-bottom: 60px;"></div>
         <div style="margin-left: 60px; margin-right: 60px; text-align: left;">
@@ -101,18 +107,23 @@
         <div class="circle" style="background-image: url(assets/img3.jpg); margin-bottom: 60px;"></div>
         <div style="margin-left: 60px; margin-right: 60px; text-align: left;">
             <b>Bunding Set</b><br>
-            <p style="text-align: left;">Bingung masak apa? sudah <br>tersedia paket untuk kamu <br> masak di dapur mu</p>
+            <p style="text-align: left;">Bingung masak apa? sudah <br>tersedia paket untuk kamu <br> masak di dapur mu
+            </p>
         </div>
     </div>
     <div class="closing">
         <h1>"E-Groceries, Sahabat Belanja Utama Anda!"</h1>
-        <p>Memberikan anda kenyamanan yang tak tertandingi, pilihan produk yang luas, dan pendekatan belanja yang lebih ramah lingkungan. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sequi quis! Odio pariatur earum nostrum ex consectetur! Rem sequi, iure accusamus voluptate enim temporibus laborum recusandae necessitatibus nihil assumenda cupiditate!</p>
+        <p>Memberikan anda kenyamanan yang tak tertandingi, pilihan produk yang luas, dan pendekatan belanja yang lebih
+            ramah lingkungan. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sequi quis! Odio
+            pariatur earum nostrum ex consectetur! Rem sequi, iure accusamus voluptate enim temporibus laborum
+            recusandae necessitatibus nihil assumenda cupiditate!</p>
     </div>
     <footer>
         <img src="../../../../SAKINAH RAHMAHWATI/logo_saya.png" alt="sakinah" class="logo" width="40px"
             height="40px"><br>
         Terms of service Privacy Policy <br> &copy;2019
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

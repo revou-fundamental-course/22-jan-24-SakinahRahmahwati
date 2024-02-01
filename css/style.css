@@ -52,6 +52,14 @@ header{
     background-clip: padding-box;
 }
 
+button{
+    text-transform: uppercase;
+    padding: 5px 50px 5px 50px;
+    margin: 40px 40px 40px 150px;
+    background-color: rgb(30, 17, 54);
+    color: white;
+}
+
 .daftar li{
     left: auto;
 }
